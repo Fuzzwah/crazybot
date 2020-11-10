@@ -8,8 +8,8 @@
 class Reply():
     '''
     A wrapper object for a Slack reply, allows for
-    custom functions and bodies based off of user 
-    to look up replies
+    custom functions and bodies based off of the user being
+    replied to
     '''
     def __init__(self, event, function=None, args=None, body=None):
         self.client = event.client
