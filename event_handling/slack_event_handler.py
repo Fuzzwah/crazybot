@@ -9,7 +9,8 @@ from event_handling.slack_event import Event
 
 class EventHandler():
     '''
-    Wraps events and adds them to EventQueue
+    Wraps event payload as an Event
+    and adds them to EventQueue
     '''
     def __init__(self, client):
         self.client = client
