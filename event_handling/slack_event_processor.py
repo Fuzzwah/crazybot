@@ -12,8 +12,8 @@ from internal_utils import custom_reply
 
 class EventProcessor(threading.Thread):
     '''
-    Event processing thread, runs throught the event queue and
-    processes every event in a separate thread so that the event_listener
+    Event processing thread, runs throught the EventQueue and
+    processes every Event in a separate thread so that the event_listener
     can return OK on time. Thanks again Slack API :)
     '''
     def __init__(self, event_queue, client, *args, **kwargs):
