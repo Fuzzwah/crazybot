@@ -77,12 +77,4 @@ class BinaryVote():
         else:
             return default
         
-    def flavor(self):
-        event_string = 'LAST_CONTR'
-        new_days, last_days = date_util.get_days_since(event_string)
-        os.environ[event_string] =  str(new_days)
-        days_since  = new_days - last_days
-        a = '. Way to go, Torch! You have gone '+str(days_since)+' days without saying something controversial!'
-        b = '. The \"days since Torch said something controversial\" counter has been reset.'
-        
         
