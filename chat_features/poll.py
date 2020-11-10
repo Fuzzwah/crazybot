@@ -11,7 +11,7 @@ from internal_utils import date_util
 
 class BinaryVote():
     '''
-    Poll w only 2 choices
+    Poll with two choices
     '''
     def __init__(self, event, theme, voting_time, y_emoji=None, n_emoji=None):
         self.event = event
