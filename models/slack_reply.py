@@ -18,15 +18,10 @@ class Reply():
         self.reply_user = event.username
         self.function = function
         self.args = args
-        #self.d_function = d_function
         self.body = body
     
     def apply_function(self):
         return self.function(self.args)
-    
-    def direct_function(self):
-        return self.d_function()
-    
         
     def send(self):
         if self.body is not None and self.function is not None:
