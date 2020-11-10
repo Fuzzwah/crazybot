@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Nov  6 13:21:45 2020
 
-@author: Matt
+@author: Matt Sehgal
 """
 
 import tweepy
@@ -11,6 +10,11 @@ import dotenv
 from dotenv import load_dotenv
 
 def main():
+    '''
+    Twitter API to access most recent tweet and compare to all time best, 
+    needs to be generalized for any functionality
+    '''
+    
     load_dotenv()
     auth = tweepy.OAuthHandler(
         os.environ['TWITTER_API_KEY'], os.environ['TWITTER_SECRET_KEY'])
