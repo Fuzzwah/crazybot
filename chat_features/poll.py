@@ -34,7 +34,7 @@ class BinaryVote():
             self.no = n_emoji
             
     def run(self):
-        poll = sr.Reply(self.event, function=self.create_poll_message).send()
+        poll = sr.Reply(self.event, function=self.create_poll_message, args=event.username).send()
         yes, no = self.count_votes(poll.get('ts'))
         results = self.create_results_message(yes, no)
         results = sr.Reply(self.event, body=results).send()
