@@ -1,13 +1,11 @@
 # SlackBot
 
 
-
 ## What is SlackBot?
 
 This is a package for running a Bot on Slack as a Flask app. It is not a fully built codebase as it is currently in use in a highly personalized way.
 In future updates, the functionality will shift to being more of a production deployment. 
 **For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.
-
 
 
 ## What does this code do?
@@ -26,7 +24,6 @@ string returning function to get a reply unique to the user. There is a [**chat 
 a reaction based poll implementation, and more useful chat interactions in the future.
 
 
-
 ## How can I run it?
 
 ### Get Tokens
@@ -38,13 +35,12 @@ In order to have the bot run successfully on in a Slack workspace, you'll need t
 Once you have your **Bot User OAuth Access Token** (found in the **OAuth & Permissions** tab), **Client Secret**, and **Signing Secret**, 
 be sure to add the required scopes from the **OAuth & Permissions** tab. The following scopes are needed for this app:
 
->channels:history
->chat:write
->reactions:read
->users.profile:read
->users:read
->users:read.email
-
+>channels:history  
+>chat:write  
+>reactions:read  
+>users.profile:read  
+>users:read  
+>users:read.email  
 
 
 ### Add Tokens to .env
@@ -55,14 +51,13 @@ access token, client secret, and signing secret into the **.env** file (without 
     SLACK_SS='your slack workspace signing secret'
     SLACK_CLIENT_SECRET='your slack client secret'
 
-
 There are two more variables set aside for if you wish to work in a development worksapce for testing:
 
     SLACK_DEV_TOKEN=
     SLACK_DEV_SS=
 
-
 You just need to register your app again on a new workspace.
+
 
 ### Setup Ngrok
 Once the environment variables are set, go [**download ngrok**](https://ngrok.com/)
@@ -72,11 +67,9 @@ Once it is downloaded, **run ngrok.exe** and enter:
 
     ngrok http 5000
 
-
 This will open a URL that forwards to your local host. You can either copy the URL from the interface or open a webrower and go to:
 
     localhost:4040
-
 
 From there copy the tunnel URL. This tab allows lets you see the live traffic of the URL which is useful for debugging.
 
