@@ -30,29 +30,29 @@ In order to have the bot run successfully on in a Slack workspace, you'll need t
 ### Register Scopes
 Once you have your **Bot User OAuth Access Token** (found in the **OAuth & Permissions** tab), **Client Secret**, and **Signing Secret**, 
 be sure to add the required scopes from the **OAuth & Permissions** tab. The following scopes are needed for this app:
-'''
-channels:history
-chat:write
-reactions:read
-users.profile:read
-users:read
-users:read.email
-'''
+
+>channels:history
+>chat:write
+>reactions:read
+>users.profile:read
+>users:read
+>users:read.email
+
 
 ### Add Tokens to .env
 Next download this respository and open the **.env** file in a text editor where you will want to paste your 
 access token, client secret, and signing secret into the **.env** file (without quotes):
-'''
-SLACK_TOKEN='your slack workspace token'
-SLACK_SS='your slack workspace signing secret'
-SLACK_CLIENT_SECRET='your slack client secret'
-'''
+
+    SLACK_TOKEN='your slack workspace token'
+    SLACK_SS='your slack workspace signing secret'
+    SLACK_CLIENT_SECRET='your slack client secret'
+
 
 There are two more variables set aside for if you wish to work in a development worksapce for testing:
-'''
-SLACK_DEV_TOKEN=
-SLACK_DEV_SS=
-'''
+
+    SLACK_DEV_TOKEN=
+    SLACK_DEV_SS=
+
 You just need to register your app again on a new workspace.
 
 ### Setup Ngrok
@@ -60,13 +60,13 @@ Once the environment variables are set, go [**download ngrok**](https://ngrok.co
 to run a URL tunnel to your local host domain. This allows for Slack workspace events to be received by your app.
 
 Once it is downloaded, **run ngrok.exe** and enter:
-'''
-ngrok http 5000
-'''
+
+    ngrok http 5000
+
 This will open a URL that forwards to your local host. You can either copy the URL from the interface or open a webrower and go to:
-'''
-localhost:4040
-'''
+
+    localhost:4040
+
 From there copy the tunnel URL. This tab allows lets you see the live traffic of the URL which is useful for debugging.
 
 ### Register URL for Event Subcriptions
