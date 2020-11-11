@@ -1,4 +1,4 @@
-### SlackBot
+# SlackBot
 
 ## What is SlackBot?
 
@@ -13,3 +13,6 @@ Some additional modules include [models](./models) for Slack events and replies.
 that extend some extra functionality. In the case of [replies](./models/slack_reply), we can pass in a string or a
 string returning function to get a reply unique to the user. There is a [chat features](./chat_features) module containing
 a reaction based poll implementation, and more useful chat interactions in the future.
+
+## How can I run it?
+
