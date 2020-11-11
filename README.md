@@ -1,13 +1,13 @@
-# SlackBot
+# SlackBot  
 
 
 ## What is SlackBot?
 
 This is a package for running a Bot on Slack as a Flask app. It is not a fully built codebase as it is currently in use in a highly personalized way.
 In future updates, the functionality will shift to being more of a production deployment. 
-**For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.
+**For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.  
 
-
+  
 ## What does this code do?
 
 ### Handling Events as Threads
@@ -21,10 +21,10 @@ the [**event handler**](./event_handling/event_handler), allowing the bot to imm
 Some additional modules include [**models**](./models) for Slack events and replies. These are wrapper objects
 that extend some extra functionality. In the case of [**replies**](./models/slack_reply), we can pass in a string or a
 string returning function to get a reply unique to the user. There is a [**chat features**](./chat_features) module containing
-a reaction based poll implementation, and more useful chat interactions in the future.
+a reaction based poll implementation, and more useful chat interactions in the future.  
 
 
-## How can I run it?
+## How can I run it?  
 
 ### Get Tokens
 In order to have the bot run successfully on in a Slack workspace, you'll need to get access tokens
