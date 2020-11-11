@@ -1,7 +1,8 @@
 # What is SlackBot?
 
 This is a package for running a Bot on Slack as a Flask app. It is not a fully built codebase as it is currently in use in a highly personalized way.
-In future updates, the functionality will shift to being more of a production deployment. 
+In future updates, the functionality will shift to being more of a production deployment.  
+
 **For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.  
 </br>
   
