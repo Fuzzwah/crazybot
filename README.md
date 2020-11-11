@@ -6,6 +6,7 @@ This is a package for running a Bot on Slack as a Flask app. It is not a fully b
 In future updates, the functionality will shift to being more of a production deployment. 
 **For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.
 
+
 ## What does this code do?
 
 ### Handling Events as Threads
@@ -20,6 +21,7 @@ Some additional modules include [**models**](./models) for Slack events and repl
 that extend some extra functionality. In the case of [**replies**](./models/slack_reply), we can pass in a string or a
 string returning function to get a reply unique to the user. There is a [**chat features**](./chat_features) module containing
 a reaction based poll implementation, and more useful chat interactions in the future.
+
 
 ## How can I run it?
 
@@ -53,6 +55,7 @@ There are two more variables set aside for if you wish to work in a development 
     SLACK_DEV_TOKEN=
     SLACK_DEV_SS=
 
+
 You just need to register your app again on a new workspace.
 
 ### Setup Ngrok
@@ -63,9 +66,11 @@ Once it is downloaded, **run ngrok.exe** and enter:
 
     ngrok http 5000
 
+
 This will open a URL that forwards to your local host. You can either copy the URL from the interface or open a webrower and go to:
 
     localhost:4040
+
 
 From there copy the tunnel URL. This tab allows lets you see the live traffic of the URL which is useful for debugging.
 
