@@ -1,11 +1,13 @@
 # SlackBot
 
 
+
 ## What is SlackBot?
 
 This is a package for running a Bot on Slack as a Flask app. It is not a fully built codebase as it is currently in use in a highly personalized way.
 In future updates, the functionality will shift to being more of a production deployment. 
 **For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.
+
 
 
 ## What does this code do?
@@ -24,11 +26,13 @@ string returning function to get a reply unique to the user. There is a [**chat 
 a reaction based poll implementation, and more useful chat interactions in the future.
 
 
+
 ## How can I run it?
 
 ### Get Tokens
 In order to have the bot run successfully on in a Slack workspace, you'll need to get access tokens
 [**from registering your bot**](https://api.slack.com/apps) on the Slack API site (by clicking **Create New App**).
+
 
 ### Register Scopes
 Once you have your **Bot User OAuth Access Token** (found in the **OAuth & Permissions** tab), **Client Secret**, and **Signing Secret**, 
@@ -40,6 +44,7 @@ be sure to add the required scopes from the **OAuth & Permissions** tab. The fol
 >users.profile:read
 >users:read
 >users:read.email
+
 
 
 ### Add Tokens to .env
@@ -75,6 +80,7 @@ This will open a URL that forwards to your local host. You can either copy the U
 
 From there copy the tunnel URL. This tab allows lets you see the live traffic of the URL which is useful for debugging.
 
+
 ### Register URL for Event Subcriptions
 Next we need to register the URL with the Slack client so it forwards events to our local host.
 Go to the specific page for your app [**from the Slack API site**](https://api.slack.com/apps). Click on the **Event Subscriptions** tab,
@@ -82,6 +88,7 @@ click **Enable Events**, and paste your URL into the **Request URL** box adding 
 
 On the same page click the **Subscribe to bot events** button then click **Add Bot User Event** and add both the **message.channels** and **reaction_added**
 events. 
+
 
 ### Run
 Finally, run the **bot.py** file and make sure your **Request URL** is showing as verified. 
