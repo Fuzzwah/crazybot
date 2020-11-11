@@ -1,12 +1,12 @@
 # SlackBot  
 
-
+<br>
 ## What is SlackBot?
 
 This is a package for running a Bot on Slack as a Flask app. It is not a fully built codebase as it is currently in use in a highly personalized way.
 In future updates, the functionality will shift to being more of a production deployment. 
 **For now this code is just a starter framework to build a Slack bot with, for which you can customize functionality and easily add new modules**.  
-
+</br>
   
 ## What does this code do?
 
@@ -22,7 +22,7 @@ Some additional modules include [**models**](./models) for Slack events and repl
 that extend some extra functionality. In the case of [**replies**](./models/slack_reply), we can pass in a string or a
 string returning function to get a reply unique to the user. There is a [**chat features**](./chat_features) module containing
 a reaction based poll implementation, and more useful chat interactions in the future.  
-
+</br>
 
 ## How can I run it?  
 
