@@ -11,8 +11,10 @@ from dotenv import load_dotenv
 from flask import Flask, Response
 from slackeventsapi import SlackEventAdapter
 from event_handling import slack_event_handler
+from pathlib import Path
 
-load_dotenv()
+env_path = Path('.') / '.secrets'
+load_dotenv(dotenv_path=env_path)
 
 app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(
